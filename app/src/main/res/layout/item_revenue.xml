@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                   android:orientation="vertical"
+                                   card_view:cardUseCompatPadding="true"
+                                   android:layout_width="match_parent"
+                                   android:layout_margin="20dp"
+                                   card_view:cardCornerRadius="5dp"
+                                   android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <TextView
+                android:id="@+id/tv_cin"
+                tools:text="07197458"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/tv_name_person"
+                tools:text="Bilel Najjar"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_type"
+                tools:text="Type"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_desc"
+                tools:text="Description"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_amount"
+                tools:text="100.0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

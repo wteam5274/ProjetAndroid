@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@id/searchBulletinFragment">
+    <fragment android:id="@+id/searchBulletinFragment"
+              android:name="com.example.projet.ui.dashboard.bulletin.search.SearchBulletinFragment"
+              tools:layout="@layout/search_bulletin_fragment">
+        <action
+                android:id="@+id/action_search_bulletin_to_bulletin_list"
+                app:destination="@id/bulletinListFragment"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+            android:id="@+id/bulletinListFragment"
+            android:name="com.example.projet.ui.dashboard.bulletin.BulletinListFragment"
+            tools:layout="@layout/fragment_bulletin">
+        <argument android:name="cin"
+                  app:nullable="false"
+                  app:argType="string"/>
+    </fragment>
+
+
+
+</navigation>

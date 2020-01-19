@@ -1,0 +1,22 @@
+{
+  "screens": [
+    {
+      "id": 1,
+      "title": "Informations d'identité",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing eli",
+      "screenImg": "municipality_img"
+    },
+    {
+      "id": 2,
+      "title": "Bulletin numéro 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",
+      "screenImg": "ministere_interne"
+    },
+    {
+      "id": 3,
+      "title": "Paiement facile",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, consectetur  consectetur adipiscing elit",
+      "screenImg": "ministere_finances"
+    }
+  ]
+}

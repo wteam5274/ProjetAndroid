@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@id/searchRevenueFragment">
+    <fragment android:id="@+id/searchRevenueFragment"
+              android:name="com.example.projet.ui.dashboard.revenue.search.SearchRevenueFragment"
+              tools:layout="@layout/search_revenue_fragment">
+        <action
+                android:id="@+id/action_search_revenue_to_revenue_list"
+                app:destination="@id/revenueListFragment"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+            android:id="@+id/revenueListFragment"
+            android:name="com.example.projet.ui.dashboard.revenue.RevenueListFragment"
+            tools:layout="@layout/fragment_revenue_list">
+        <argument android:name="cin"
+                  app:nullable="false"
+                  app:argType="string"/>
+        <action
+                android:id="@+id/action_list_revenue_to_revenue_details"
+                app:destination="@id/detailRevenueFragment"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/detailRevenueFragment"
+            android:name="com.example.projet.ui.dashboard.revenue.details.DetailRevenueFragment"
+            tools:layout="@layout/fragment_detail_revenue">
+        <argument android:name="fromFragmentName"
+                  app:nullable="false"
+                  app:argType="string"/>
+        <argument android:name="idRevenue"
+                  app:nullable="false"
+                  app:argType="integer"/>
+    </fragment>
+
+</navigation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@id/searchIdentityFragment">
+    <fragment
+            android:id="@+id/searchIdentityFragment"
+            android:name="com.example.projet.ui.dashboard.birth.SearchIdentityFragment"
+            tools:layout="@layout/search_identity_fragment">
+        <action
+                android:id="@+id/action_search_identity_to_result_identity"
+                app:destination="@id/resultIdentityFragment"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+            android:id="@+id/resultIdentityFragment"
+            android:name="com.example.projet.ui.dashboard.birth.ResultIdentityFragment"
+            tools:layout="@layout/result_identity_fragment">
+
+        <argument android:name="firstName"
+                  app:nullable="false"
+                  app:argType="string"/>
+        <argument android:name="lastName"
+                  app:nullable="false"
+                  app:argType="string"/>
+        <argument android:name="cin"
+                  app:nullable="false"
+                  app:argType="string"/>
+        <argument android:name="birthDate"
+                  app:nullable="false"
+                  app:argType="string"/>
+    </fragment>
+
+</navigation>
